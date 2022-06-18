@@ -1,0 +1,12 @@
+#N canvas 0 309 1920 1019 10;
+#X text 127 72 this is the delay;
+#X obj 150 155 *~ 1.0001;
+#X obj 335 486 *~ 0.5;
+#X obj 205 804 *~ 1.0002;
+#X obj 218 250 delwrite~ d 600;
+#X obj 202 651 delread~ d 300;
+#X connect 1 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 5 0 2 0;
+#X connect 5 0 3 0;
